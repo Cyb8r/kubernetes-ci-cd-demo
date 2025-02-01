@@ -29,7 +29,6 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t tinegaonchari/current-time-api:${{ github.sha }} .
-          docker tag tinegaonchari/current-time-api:${{ github.sha }} tinegaonchari/current-time-api:latest
-          docker push tinegaonchari/current-time-api:${{ github.sha }}
-          docker push tinegaonchari/current-time-api:latest
+          docker build -t myapplication/current-time-api:${{ github.sha }} .
+          docker tag myapplication/current-time-api:${{ github.sha }} myapplication/current-time-api:latest
+          docker push myapplication/current-time-api:latest
