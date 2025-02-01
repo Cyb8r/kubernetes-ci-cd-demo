@@ -37,4 +37,4 @@ jobs:
         run: |
           docker build -t cyb3rjay/myapplication:${{ github.sha }} .
           docker tag cyb3rjay/myapplication:${{ github.sha }} cyb3rjay/myapplication:latest
-          docker push cyb3rjay/myapplication/:latest
+          docker push cyb3rjay/myapplication:latest
