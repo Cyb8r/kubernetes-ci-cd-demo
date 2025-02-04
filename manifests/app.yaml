@@ -5,10 +5,10 @@ metadata:
   namespace: argocd
 spec:
   source:
-    repoURL: git@github.com:Tinega-Devops/kubernetes-ci-cd-demo.git
+    repoURL: git@github.com:Cyb8r/kubernetes-ci-cd-demo.git
     targetRevision: main
     path: manifests
   destination:
-    server: https://kubernetes.default.svc
+    server: https://192.168.49.2:8443
     namespace: default
   project: default
